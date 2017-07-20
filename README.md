@@ -6,6 +6,44 @@ At the top of the file there should be a short introduction and/ or overview tha
 
 Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
 
+``` C
+void runProgram(){
+    // Variabile locale
+    int optiune;
+    // Meniul aplicatiei
+    while(1){
+        printf("Aveti la dispozitie urmatoarele optiuni:\n"
+                "1. - Adaugati un contact.\n"
+                "2. - Editati contactul.\n"
+                "3. - Stergeti contactul.\n"
+                "4. - Exit.\n"
+                "5. - Afisati contactele.\n"
+                "6. - GitHub push code.\n"
+                "Introduceti optiunea dvs: ");
+        scanf("%d", &optiune);
+
+        switch(optiune){
+            case 1:
+                adaugaContact();
+              break;
+            case 2:
+              break;
+            case 3:
+              break;
+            case 4:
+              exit(0);
+            case 5:
+              break;
+            case 6:
+              break;
+            default:
+              printf("Optiunea dvs nu a fost gasita ...");
+              break;
+        }
+    }
+}
+```
+
 ## Motivation
 
 A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
